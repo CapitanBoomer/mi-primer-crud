@@ -1,0 +1,7 @@
+{
+  "name": "CRUD cubitos MC",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
