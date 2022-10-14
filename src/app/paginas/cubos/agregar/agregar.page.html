@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>agregar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<form [formGroup]="formulario">
+  <ion-item>
+    <ion-label position="floating">nombre</ion-label>
+    <ion-input type="text" formControlName="nombre"></ion-input>
+    <ion-note slot="error" *ngIf=" obtenernombre().invalid && obtenernombre().errors && obtenernombre().errors.minlength && obtenernombre().dirty " > algo falta</ion-note>
+    <br>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">correo</ion-label>
+    <ion-input type="text" formControlName="correo"></ion-input>
+    <ion-note  slot="error" *ngIf=" obtenernombre().invalid && obtenernombre().errors && obtenernombre().errors.required && obtenernombre().touched " >faltan datos</ion-note>
+  </ion-item>
+
+
+</form>
+</ion-content>
